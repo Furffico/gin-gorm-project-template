@@ -1,0 +1,21 @@
+[general]
+debug = true
+
+[server]
+bind_address = "127.0.0.1"
+bind_port = 8080
+trusted_proxies = ["127.0.0.1"]
+API_basepath = "/"
+
+[server.static_file]
+enabled = false
+basepath = "/assets"
+location = "./web/dist/assets"
+indexpage = "./web/dist/index.html"
+
+[database]
+address = "127.0.0.1"
+port = 3306
+user = 'username'
+password = 'password'
+schema = 'schema'

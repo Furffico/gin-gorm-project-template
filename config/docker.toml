@@ -1,0 +1,19 @@
+[general]
+debug = "${DEBUG|false}"
+
+
+[server]
+bind_address = "${BIND_ADDRESS|0.0.0.0}"
+bind_port = "${BIND_PORT|15332}"
+trusted_proxies = ["127.0.0.1", "${TRUSTED_PROXIES|0.0.0.0}"]
+API_basepath = "${BASE_PATH|/api/}"
+
+[server.static_file]
+enabled = false
+
+[database]
+address = "${DB_ADDRESS|0.0.0.0}"
+port = "${DB_PORT|3306}"
+user = "${DB_USER|username}"
+password = "${DB_PASSWORD|password}"
+schema = "${DB_SCHEMA|schema}"
